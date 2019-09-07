@@ -8,8 +8,7 @@ class Node:
         return ""
     def get_neighbors(self):
         """
-        Returns all neighbors of a node, and how to reach them. The result is a list of 3-tuples (neighbor,dist,edge), where neighbors is a Node object, dist is a numeric value representing the distance between the two nodes, 
-        and edge is an Edge object (see below) representing the path taken to the neighbor.
+        Returns all neighbors of a node, and how to reach them. The result is a list Edge objects, which contains 3 attributes target, cost and name, where target is a Node object, cost is a numeric value representing the distance between the two nodes, and name is a string representing the path taken to the neighbor.
         """
         return []
     def __eq__(self, other):
